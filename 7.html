@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  <meta charset="utf-8">
+  <title>task2.7</title>
+  	<style>
+  		body{
+  			color: white;
+  		}
+			.d_static{
+				position: static;
+				background: #8A2BE2;
+				width: 150px;
+				height: 100px;
+			}
+			.d_relative_1{
+				position: relative;
+				background: #8B0000;
+				width: 150px;
+				height: 100px;	
+			}
+			.d_relative_2{
+				position: relative;
+				background: #CD853F;
+				width: 150px;
+				height: 100px;
+				bottom: 30px;
+				left: 30px;
+			}
+			.parent{
+				position: relative;
+				background: #CD5C5C;
+				width: 600px;
+				height: 400px;
+			}
+			.child{
+				position: absolute;
+				background: #4B0082;
+				width: 300px;
+				height: 200px;
+				top: 100px;
+				left: 300px;
+			}
+			.d_fixed{
+				position: fixed;
+				background: #228B22;
+				width: 100px;
+				height: 100px;
+				right: 0%;
+				bottom: 0%;
+			}
+  	</style>
+	</head>
+	<body>
+		<div class="d_fixed">It's a fixed div!</div>
+		<div class="d_static">It's a static div!</div>
+		<div class="d_relative_1">It's a relative div!</div>
+		<div class="d_relative_2">It's a relative div!</div>
+		<div class="parent">It's a relative div!
+			<div class="child">It's an absolute div with relative parent!</div>
+		</div>
+		
+	</body>
+</html>
